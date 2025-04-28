@@ -1,0 +1,5 @@
+This is my Kubernetes dashboard project. It displays all kubernetes resources running on my machine via Minikube.
+
+As of 04/27/2025 it currently:
+- correctly displays resources on a blank Flask webpage.
+- only displays pods
