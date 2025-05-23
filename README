@@ -3,3 +3,8 @@ This is my Kubernetes dashboard project. It displays all kubernetes resources ru
 As of 04/27/2025 it currently:
 - correctly displays resources on a blank Flask webpage.
 - only displays pods
+
+05/23/2025
+- Skeleton started and fully fleshed out project idea 
+- displays Pods, ReplicaSets, Deployments, PersistentVolumes, PersistentVolumeClaims
+- React component added for frontend display
