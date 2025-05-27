@@ -1,0 +1,824 @@
+{
+  "pods": [
+    {
+      "name": "grafana-56849c4b8c-tt8nk",
+      "namespace": "default",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "app.kubernetes.io/instance": "grafana",
+        "app.kubernetes.io/name": "grafana",
+        "app.kubernetes.io/version": "11.6.1",
+        "helm.sh/chart": "grafana-8.15.0",
+        "pod-template-hash": "56849c4b8c"
+      },
+      "containers": [
+        "docker.io/grafana/grafana:11.6.1"
+      ],
+      "restarts": 2,
+      "created": "2025-05-06T20:10:12+00:00"
+    },
+    {
+      "name": "new-nginx",
+      "namespace": "default",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "run": "new-nginx"
+      },
+      "containers": [
+        "nginx"
+      ],
+      "restarts": 1,
+      "created": "2025-05-20T03:45:35+00:00"
+    },
+    {
+      "name": "nginx-pod",
+      "namespace": "default",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "run": "nginx-pod"
+      },
+      "containers": [
+        "nginx"
+      ],
+      "restarts": 3,
+      "created": "2025-03-18T21:43:18+00:00"
+    },
+    {
+      "name": "prometheus-alertmanager-0",
+      "namespace": "default",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/name": "alertmanager",
+        "apps.kubernetes.io/pod-index": "0",
+        "controller-revision-hash": "prometheus-alertmanager-78d8bb7487",
+        "statefulset.kubernetes.io/pod-name": "prometheus-alertmanager-0"
+      },
+      "containers": [
+        "quay.io/prometheus/alertmanager:v0.28.1"
+      ],
+      "restarts": 2,
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "prometheus-kube-state-metrics-584f9d9b97-rqm4w",
+      "namespace": "default",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "app.kubernetes.io/component": "metrics",
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "kube-state-metrics",
+        "app.kubernetes.io/part-of": "kube-state-metrics",
+        "app.kubernetes.io/version": "2.15.0",
+        "helm.sh/chart": "kube-state-metrics-5.33.0",
+        "pod-template-hash": "584f9d9b97"
+      },
+      "containers": [
+        "registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.15.0"
+      ],
+      "restarts": 4,
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "prometheus-prometheus-node-exporter-q448r",
+      "namespace": "default",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "app.kubernetes.io/component": "metrics",
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "prometheus-node-exporter",
+        "app.kubernetes.io/part-of": "prometheus-node-exporter",
+        "app.kubernetes.io/version": "1.9.1",
+        "controller-revision-hash": "85b5894f8b",
+        "helm.sh/chart": "prometheus-node-exporter-4.46.0",
+        "pod-template-generation": "1"
+      },
+      "containers": [
+        "quay.io/prometheus/node-exporter:v1.9.1"
+      ],
+      "restarts": 2,
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "prometheus-prometheus-pushgateway-866c5c685c-zwjjb",
+      "namespace": "default",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "prometheus-pushgateway",
+        "app.kubernetes.io/version": "v1.11.1",
+        "helm.sh/chart": "prometheus-pushgateway-3.2.0",
+        "pod-template-hash": "866c5c685c"
+      },
+      "containers": [
+        "quay.io/prometheus/pushgateway:v1.11.1"
+      ],
+      "restarts": 2,
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "prometheus-server-749699d984-6n8gs",
+      "namespace": "default",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "app.kubernetes.io/component": "server",
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/name": "prometheus",
+        "app.kubernetes.io/part-of": "prometheus",
+        "app.kubernetes.io/version": "v3.3.1",
+        "helm.sh/chart": "prometheus-27.12.0",
+        "pod-template-hash": "749699d984"
+      },
+      "containers": [
+        "quay.io/prometheus-operator/prometheus-config-reloader:v0.82.0",
+        "quay.io/prometheus/prometheus:v3.3.1"
+      ],
+      "restarts": 4,
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "second-new-nginx",
+      "namespace": "default",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "run": "second-new-nginx"
+      },
+      "containers": [
+        "nginx"
+      ],
+      "restarts": 1,
+      "created": "2025-05-20T03:46:08+00:00"
+    },
+    {
+      "name": "flask-app-5bdbb69ff5-96rrn",
+      "namespace": "flask-app",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "app": "flask",
+        "pod-template-hash": "5bdbb69ff5"
+      },
+      "containers": [
+        "ghcr.io/jeffreyjing/flask-k8s-pipeline:latest"
+      ],
+      "restarts": 3,
+      "created": "2025-03-16T22:33:43+00:00"
+    },
+    {
+      "name": "flask-app-5bdbb69ff5-f4rth",
+      "namespace": "flask-app",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "app": "flask",
+        "pod-template-hash": "5bdbb69ff5"
+      },
+      "containers": [
+        "ghcr.io/jeffreyjing/flask-k8s-pipeline:latest"
+      ],
+      "restarts": 3,
+      "created": "2025-03-16T22:33:25+00:00"
+    },
+    {
+      "name": "coredns-668d6bf9bc-pwsck",
+      "namespace": "kube-system",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "k8s-app": "kube-dns",
+        "pod-template-hash": "668d6bf9bc"
+      },
+      "containers": [
+        "registry.k8s.io/coredns/coredns:v1.11.3"
+      ],
+      "restarts": 3,
+      "created": "2025-03-16T22:14:06+00:00"
+    },
+    {
+      "name": "etcd-minikube",
+      "namespace": "kube-system",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "component": "etcd",
+        "tier": "control-plane"
+      },
+      "containers": [
+        "registry.k8s.io/etcd:3.5.16-0"
+      ],
+      "restarts": 3,
+      "created": "2025-03-16T22:14:01+00:00"
+    },
+    {
+      "name": "kube-apiserver-minikube",
+      "namespace": "kube-system",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "component": "kube-apiserver",
+        "tier": "control-plane"
+      },
+      "containers": [
+        "registry.k8s.io/kube-apiserver:v1.32.0"
+      ],
+      "restarts": 3,
+      "created": "2025-03-16T22:14:01+00:00"
+    },
+    {
+      "name": "kube-controller-manager-minikube",
+      "namespace": "kube-system",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "component": "kube-controller-manager",
+        "tier": "control-plane"
+      },
+      "containers": [
+        "registry.k8s.io/kube-controller-manager:v1.32.0"
+      ],
+      "restarts": 3,
+      "created": "2025-03-16T22:14:01+00:00"
+    },
+    {
+      "name": "kube-proxy-ltrmc",
+      "namespace": "kube-system",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "controller-revision-hash": "64b9dbc74b",
+        "k8s-app": "kube-proxy",
+        "pod-template-generation": "1"
+      },
+      "containers": [
+        "registry.k8s.io/kube-proxy:v1.32.0"
+      ],
+      "restarts": 3,
+      "created": "2025-03-16T22:14:06+00:00"
+    },
+    {
+      "name": "kube-scheduler-minikube",
+      "namespace": "kube-system",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "component": "kube-scheduler",
+        "tier": "control-plane"
+      },
+      "containers": [
+        "registry.k8s.io/kube-scheduler:v1.32.0"
+      ],
+      "restarts": 3,
+      "created": "2025-03-16T22:14:01+00:00"
+    },
+    {
+      "name": "storage-provisioner",
+      "namespace": "kube-system",
+      "status": "Running",
+      "node": "minikube",
+      "labels": {
+        "addonmanager.kubernetes.io/mode": "Reconcile",
+        "integration-test": "storage-provisioner"
+      },
+      "containers": [
+        "gcr.io/k8s-minikube/storage-provisioner:v5"
+      ],
+      "restarts": 6,
+      "created": "2025-03-16T22:14:02+00:00"
+    }
+  ],
+  "deployments": [
+    {
+      "name": "grafana",
+      "namespace": "default",
+      "replicas": 1,
+      "available": 1,
+      "labels": {
+        "app.kubernetes.io/instance": "grafana",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "grafana",
+        "app.kubernetes.io/version": "11.6.1",
+        "helm.sh/chart": "grafana-8.15.0"
+      },
+      "created": "2025-05-06T19:08:27+00:00"
+    },
+    {
+      "name": "prometheus-kube-state-metrics",
+      "namespace": "default",
+      "replicas": 1,
+      "available": 1,
+      "labels": {
+        "app.kubernetes.io/component": "metrics",
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "kube-state-metrics",
+        "app.kubernetes.io/part-of": "kube-state-metrics",
+        "app.kubernetes.io/version": "2.15.0",
+        "helm.sh/chart": "kube-state-metrics-5.33.0"
+      },
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "prometheus-prometheus-pushgateway",
+      "namespace": "default",
+      "replicas": 1,
+      "available": 1,
+      "labels": {
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "prometheus-pushgateway",
+        "app.kubernetes.io/version": "v1.11.1",
+        "helm.sh/chart": "prometheus-pushgateway-3.2.0"
+      },
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "prometheus-server",
+      "namespace": "default",
+      "replicas": 1,
+      "available": 1,
+      "labels": {
+        "app.kubernetes.io/component": "server",
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "prometheus",
+        "app.kubernetes.io/part-of": "prometheus",
+        "app.kubernetes.io/version": "v3.3.1",
+        "helm.sh/chart": "prometheus-27.12.0"
+      },
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "flask-app",
+      "namespace": "flask-app",
+      "replicas": 2,
+      "available": 2,
+      "labels": null,
+      "created": "2025-03-16T22:16:57+00:00"
+    },
+    {
+      "name": "coredns",
+      "namespace": "kube-system",
+      "replicas": 1,
+      "available": 1,
+      "labels": {
+        "k8s-app": "kube-dns"
+      },
+      "created": "2025-03-16T22:14:01+00:00"
+    }
+  ],
+  "replicasets": [
+    {
+      "name": "grafana-56849c4b8c",
+      "namespace": "default",
+      "replicas": 1,
+      "ready": 1,
+      "labels": {
+        "app.kubernetes.io/instance": "grafana",
+        "app.kubernetes.io/name": "grafana",
+        "app.kubernetes.io/version": "11.6.1",
+        "helm.sh/chart": "grafana-8.15.0",
+        "pod-template-hash": "56849c4b8c"
+      },
+      "created": "2025-05-06T20:10:12+00:00"
+    },
+    {
+      "name": "grafana-6fbfd88db5",
+      "namespace": "default",
+      "replicas": 0,
+      "ready": null,
+      "labels": {
+        "app.kubernetes.io/instance": "grafana",
+        "app.kubernetes.io/name": "grafana",
+        "app.kubernetes.io/version": "11.6.1",
+        "helm.sh/chart": "grafana-8.15.0",
+        "pod-template-hash": "6fbfd88db5"
+      },
+      "created": "2025-05-06T19:08:27+00:00"
+    },
+    {
+      "name": "prometheus-kube-state-metrics-584f9d9b97",
+      "namespace": "default",
+      "replicas": 1,
+      "ready": 1,
+      "labels": {
+        "app.kubernetes.io/component": "metrics",
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "kube-state-metrics",
+        "app.kubernetes.io/part-of": "kube-state-metrics",
+        "app.kubernetes.io/version": "2.15.0",
+        "helm.sh/chart": "kube-state-metrics-5.33.0",
+        "pod-template-hash": "584f9d9b97"
+      },
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "prometheus-prometheus-pushgateway-866c5c685c",
+      "namespace": "default",
+      "replicas": 1,
+      "ready": 1,
+      "labels": {
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "prometheus-pushgateway",
+        "app.kubernetes.io/version": "v1.11.1",
+        "helm.sh/chart": "prometheus-pushgateway-3.2.0",
+        "pod-template-hash": "866c5c685c"
+      },
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "prometheus-server-749699d984",
+      "namespace": "default",
+      "replicas": 1,
+      "ready": 1,
+      "labels": {
+        "app.kubernetes.io/component": "server",
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/name": "prometheus",
+        "app.kubernetes.io/part-of": "prometheus",
+        "app.kubernetes.io/version": "v3.3.1",
+        "helm.sh/chart": "prometheus-27.12.0",
+        "pod-template-hash": "749699d984"
+      },
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "flask-app-5bdbb69ff5",
+      "namespace": "flask-app",
+      "replicas": 2,
+      "ready": 2,
+      "labels": {
+        "app": "flask",
+        "pod-template-hash": "5bdbb69ff5"
+      },
+      "created": "2025-03-16T22:33:25+00:00"
+    },
+    {
+      "name": "coredns-668d6bf9bc",
+      "namespace": "kube-system",
+      "replicas": 1,
+      "ready": 1,
+      "labels": {
+        "k8s-app": "kube-dns",
+        "pod-template-hash": "668d6bf9bc"
+      },
+      "created": "2025-03-16T22:14:05+00:00"
+    }
+  ],
+  "services": [
+    {
+      "name": "grafana",
+      "namespace": "default",
+      "type": "NodePort",
+      "cluster_ip": "10.97.43.31",
+      "ports": [
+        {
+          "port": 80,
+          "targetPort": 3000
+        }
+      ],
+      "labels": {
+        "app.kubernetes.io/instance": "grafana",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "grafana",
+        "app.kubernetes.io/version": "11.6.1",
+        "helm.sh/chart": "grafana-8.15.0"
+      },
+      "created": "2025-05-06T19:08:27+00:00"
+    },
+    {
+      "name": "kubernetes",
+      "namespace": "default",
+      "type": "ClusterIP",
+      "cluster_ip": "10.96.0.1",
+      "ports": [
+        {
+          "port": 443,
+          "targetPort": 8443
+        }
+      ],
+      "labels": {
+        "component": "apiserver",
+        "provider": "kubernetes"
+      },
+      "created": "2025-03-16T22:14:00+00:00"
+    },
+    {
+      "name": "nginx-pod",
+      "namespace": "default",
+      "type": "NodePort",
+      "cluster_ip": "10.98.251.240",
+      "ports": [
+        {
+          "port": 80,
+          "targetPort": 80
+        }
+      ],
+      "labels": {
+        "run": "nginx-pod"
+      },
+      "created": "2025-03-18T22:49:46+00:00"
+    },
+    {
+      "name": "prometheus-alertmanager",
+      "namespace": "default",
+      "type": "ClusterIP",
+      "cluster_ip": "10.103.183.255",
+      "ports": [
+        {
+          "port": 9093,
+          "targetPort": "http"
+        }
+      ],
+      "labels": {
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "alertmanager",
+        "app.kubernetes.io/version": "v0.28.1",
+        "helm.sh/chart": "alertmanager-1.16.2"
+      },
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "prometheus-alertmanager-headless",
+      "namespace": "default",
+      "type": "ClusterIP",
+      "cluster_ip": "None",
+      "ports": [
+        {
+          "port": 9093,
+          "targetPort": "http"
+        }
+      ],
+      "labels": {
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "alertmanager",
+        "app.kubernetes.io/version": "v0.28.1",
+        "helm.sh/chart": "alertmanager-1.16.2"
+      },
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "prometheus-kube-state-metrics",
+      "namespace": "default",
+      "type": "ClusterIP",
+      "cluster_ip": "10.104.64.75",
+      "ports": [
+        {
+          "port": 8080,
+          "targetPort": 8080
+        }
+      ],
+      "labels": {
+        "app.kubernetes.io/component": "metrics",
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "kube-state-metrics",
+        "app.kubernetes.io/part-of": "kube-state-metrics",
+        "app.kubernetes.io/version": "2.15.0",
+        "helm.sh/chart": "kube-state-metrics-5.33.0"
+      },
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "prometheus-prometheus-node-exporter",
+      "namespace": "default",
+      "type": "ClusterIP",
+      "cluster_ip": "10.98.181.190",
+      "ports": [
+        {
+          "port": 9100,
+          "targetPort": 9100
+        }
+      ],
+      "labels": {
+        "app.kubernetes.io/component": "metrics",
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "prometheus-node-exporter",
+        "app.kubernetes.io/part-of": "prometheus-node-exporter",
+        "app.kubernetes.io/version": "1.9.1",
+        "helm.sh/chart": "prometheus-node-exporter-4.46.0"
+      },
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "prometheus-prometheus-pushgateway",
+      "namespace": "default",
+      "type": "ClusterIP",
+      "cluster_ip": "10.100.99.61",
+      "ports": [
+        {
+          "port": 9091,
+          "targetPort": 9091
+        }
+      ],
+      "labels": {
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "prometheus-pushgateway",
+        "app.kubernetes.io/version": "v1.11.1",
+        "helm.sh/chart": "prometheus-pushgateway-3.2.0"
+      },
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "prometheus-server",
+      "namespace": "default",
+      "type": "NodePort",
+      "cluster_ip": "10.96.121.93",
+      "ports": [
+        {
+          "port": 80,
+          "targetPort": 9090
+        }
+      ],
+      "labels": {
+        "app.kubernetes.io/component": "server",
+        "app.kubernetes.io/instance": "prometheus",
+        "app.kubernetes.io/managed-by": "Helm",
+        "app.kubernetes.io/name": "prometheus",
+        "app.kubernetes.io/part-of": "prometheus",
+        "app.kubernetes.io/version": "v3.3.1",
+        "helm.sh/chart": "prometheus-27.12.0"
+      },
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "flask-service",
+      "namespace": "flask-app",
+      "type": "LoadBalancer",
+      "cluster_ip": "10.103.54.131",
+      "ports": [
+        {
+          "port": 80,
+          "targetPort": 5000
+        }
+      ],
+      "labels": null,
+      "created": "2025-03-16T22:16:57+00:00"
+    },
+    {
+      "name": "kube-dns",
+      "namespace": "kube-system",
+      "type": "ClusterIP",
+      "cluster_ip": "10.96.0.10",
+      "ports": [
+        {
+          "port": 53,
+          "targetPort": 53
+        },
+        {
+          "port": 53,
+          "targetPort": 53
+        },
+        {
+          "port": 9153,
+          "targetPort": 9153
+        }
+      ],
+      "labels": {
+        "k8s-app": "kube-dns",
+        "kubernetes.io/cluster-service": "true",
+        "kubernetes.io/name": "CoreDNS"
+      },
+      "created": "2025-03-16T22:14:01+00:00"
+    }
+  ],
+  "nodes": [
+    {
+      "name": "minikube",
+      "labels": {
+        "beta.kubernetes.io/arch": "arm64",
+        "beta.kubernetes.io/os": "linux",
+        "kubernetes.io/arch": "arm64",
+        "kubernetes.io/hostname": "minikube",
+        "kubernetes.io/os": "linux",
+        "minikube.k8s.io/commit": "dd5d320e41b5451cdf3c01891bc4e13d189586ed-dirty",
+        "minikube.k8s.io/name": "minikube",
+        "minikube.k8s.io/primary": "true",
+        "minikube.k8s.io/updated_at": "2025_03_16T15_14_02_0700",
+        "minikube.k8s.io/version": "v1.35.0",
+        "node-role.kubernetes.io/control-plane": "",
+        "node.kubernetes.io/exclude-from-external-load-balancers": ""
+      },
+      "conditions": [
+        {
+          "type": "MemoryPressure",
+          "status": "False"
+        },
+        {
+          "type": "DiskPressure",
+          "status": "False"
+        },
+        {
+          "type": "PIDPressure",
+          "status": "False"
+        },
+        {
+          "type": "Ready",
+          "status": "True"
+        }
+      ],
+      "created": "2025-03-16T22:13:59+00:00"
+    }
+  ],
+  "namespaces": [
+    {
+      "name": "default",
+      "status": "Active",
+      "labels": {
+        "kubernetes.io/metadata.name": "default"
+      },
+      "created": "2025-03-16T22:13:59+00:00"
+    },
+    {
+      "name": "flask-app",
+      "status": "Active",
+      "labels": {
+        "kubernetes.io/metadata.name": "flask-app"
+      },
+      "created": "2025-03-16T22:16:50+00:00"
+    },
+    {
+      "name": "kube-node-lease",
+      "status": "Active",
+      "labels": {
+        "kubernetes.io/metadata.name": "kube-node-lease"
+      },
+      "created": "2025-03-16T22:13:59+00:00"
+    },
+    {
+      "name": "kube-public",
+      "status": "Active",
+      "labels": {
+        "kubernetes.io/metadata.name": "kube-public"
+      },
+      "created": "2025-03-16T22:13:59+00:00"
+    },
+    {
+      "name": "kube-system",
+      "status": "Active",
+      "labels": {
+        "kubernetes.io/metadata.name": "kube-system"
+      },
+      "created": "2025-03-16T22:13:59+00:00"
+    }
+  ],
+  "persistent_volume_claims": [
+    {
+      "name": "prometheus-server",
+      "namespace": "default",
+      "status": "Bound",
+      "storage": "8Gi",
+      "volume": "pvc-7764b3ae-a0f4-4fa7-ac8c-3ed26a6a0115",
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "storage-prometheus-alertmanager-0",
+      "namespace": "default",
+      "status": "Bound",
+      "storage": "2Gi",
+      "volume": "pvc-7e67a8a2-a65e-481e-805f-e4bf9e2a7943",
+      "created": "2025-05-06T18:58:08+00:00"
+    }
+  ],
+  "persistent_volumes": [
+    {
+      "name": "pvc-7764b3ae-a0f4-4fa7-ac8c-3ed26a6a0115",
+      "status": "Bound",
+      "capacity": "8Gi",
+      "access_modes": [
+        "ReadWriteOnce"
+      ],
+      "storage_class": "standard",
+      "claim": "default/prometheus-server",
+      "created": "2025-05-06T18:58:08+00:00"
+    },
+    {
+      "name": "pvc-7e67a8a2-a65e-481e-805f-e4bf9e2a7943",
+      "status": "Bound",
+      "capacity": "2Gi",
+      "access_modes": [
+        "ReadWriteOnce"
+      ],
+      "storage_class": "standard",
+      "claim": "default/storage-prometheus-alertmanager-0",
+      "created": "2025-05-06T18:58:08+00:00"
+    }
+  ]
+}
