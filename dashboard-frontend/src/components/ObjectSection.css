@@ -1,0 +1,23 @@
+.node {
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center; /* ✅ centers all inner text */
+  transition: transform 0.2s ease;
+  color: white;
+}
+
+.node-title {
+  margin-bottom: 8px;
+  font-size: 150%;
+}
+
+.dropdown {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.dropdown li {
+  margin: 4px 0;
+  text-align: center;
+}
