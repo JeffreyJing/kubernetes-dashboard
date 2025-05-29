@@ -6,7 +6,7 @@ function ObjectSection({ type, items = [] }) {
 
   return (
     <div className="node" onClick={() => setIsOpen(!isOpen)}>
-      <div className="node-title">{type.toUpperCase()}</div>
+      <div className="node-title">{type.replace(/_/g, ' ').toUpperCase()}</div>
       {isOpen && (
         <ul className="dropdown">
           {items.map((item, i) => (

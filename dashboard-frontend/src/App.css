@@ -1,6 +1,8 @@
 .dashboard-container {
   background-color: rgba(25,50,91,255);
   min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
   padding: 40px 20px;
   box-sizing: border-box;
   color: white;
@@ -20,6 +22,10 @@
   justify-items: center;
   align-items: start;
   gap: 40px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .column {

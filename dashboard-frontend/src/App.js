@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="dashboard-container">
-      <h1 className="title">Minikube Dashboard</h1>
+      <h1 className="title">My Minikube Dashboard</h1>
       <div className="dashboard-layout">
         <div className="column left">
           {objectTypes.slice(0, 4).map((type, i) => (
