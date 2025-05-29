@@ -14,6 +14,10 @@ def cluster_view():
     replicasets = apps.list_replica_set_for_all_namespaces().items
     deployments = apps.list_deployment_for_all_namespaces().items
     services = core.list_service_for_all_namespaces().items
+    nodes = core.list_node().items
+    namespaces = core.list_namespace().items
+    pvs = core.list_persistent_volume().items
+    pvcs = core.list_persistent_volume_claim_for_all_namespaces().items
 
     html = "<h2>PODS</h2>"
     html += "<br>".join(p.metadata.name for p in pods)
@@ -27,6 +31,18 @@ def cluster_view():
     html += "<h2>SERVICES</h2>"
     html += "<br>".join(s.metadata.name for s in services)
 
+    html += "<h2>NODES</h2>"
+    html += "<br>".join(node.metadata.name for node in nodes)
+
+    html += "<h2>NAMESPACES</h2>"
+    html += "<br>".join(ns.metadata.name for ns in namespaces)
+
+    html += "<h2>PERSISTENT VOLUMES</h2>"
+    html += "<br>".join(pv.metadata.name for pv in pvs)
+
+    html += "<h2>PERSISTENT VOLUME CLAIMS</h2>"
+    html += "<br>".join(pvc.metadata.name for pvc in pvcs)
+    
     return html
 
 @cluster_bp.route('/api/cluster-state')
