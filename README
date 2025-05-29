@@ -8,3 +8,10 @@ As of 04/27/2025 it currently:
 - Skeleton started and fully fleshed out project idea 
 - displays Pods, ReplicaSets, Deployments, PersistentVolumes, PersistentVolumeClaims
 - React component added for frontend display
+
+
+05/29/2025
+- Live on Github Pages!
+
+
+🔗 [Live Site](https://jeffreyjing.github.io/minikube-dashboard)
