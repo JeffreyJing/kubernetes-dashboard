@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/minikube-dashboard/static/css/main.6007a002.css",
+    "main.js": "/minikube-dashboard/static/js/main.dc33f0f7.js",
+    "static/js/453.a12f2c76.chunk.js": "/minikube-dashboard/static/js/453.a12f2c76.chunk.js",
+    "static/media/k8s-logo.png": "/minikube-dashboard/static/media/k8s-logo.38103bde7580fe2a2989.png",
+    "index.html": "/minikube-dashboard/index.html",
+    "main.6007a002.css.map": "/minikube-dashboard/static/css/main.6007a002.css.map",
+    "main.dc33f0f7.js.map": "/minikube-dashboard/static/js/main.dc33f0f7.js.map",
+    "453.a12f2c76.chunk.js.map": "/minikube-dashboard/static/js/453.a12f2c76.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6007a002.css",
+    "static/js/main.dc33f0f7.js"
+  ]
+}

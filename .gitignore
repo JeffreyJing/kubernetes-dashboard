@@ -1,0 +1,15 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# React
+dashboard-frontend/node_modules/
+dashboard-frontend/build/
+
+# Snapshots
+#snapshot/*.json  # unless you want to track a final version
+
+# OS / IDE
+.DS_Store
+.env
