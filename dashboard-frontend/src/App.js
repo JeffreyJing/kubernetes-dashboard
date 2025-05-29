@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState({});
   const objectTypes = ['pods', 'services', 'replicasets', 'deployments', 'nodes', 'namespaces', 'persistent_volumes', 'persistent_volume_claims']
   useEffect(() => {
-    fetch('/snapshot.json')
+    fetch(`${process.env.PUBLIC_URL}/snapshot.json`)
       .then(res => res.json())
       .then(setData)
       .catch(() => setData({}));
